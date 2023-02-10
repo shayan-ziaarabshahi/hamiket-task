@@ -1,16 +1,9 @@
-import { useMemo } from "react";
-import styles from "./App.module.css";
-import Accordion from "./components/Accordion";
-import transformTasks from "./helpers/transformTasks";
+import React from 'react'
+import Table from './components/Table'
+
 
 function App() {
-  let accordionData = useMemo(transformTasks, []);
-
-  return (
-    <div className={styles.container}>
-      <Accordion accordionItems={accordionData} />
-    </div>
-  );
+  return <Table/>
 }
 
-export default App;
+export default App
